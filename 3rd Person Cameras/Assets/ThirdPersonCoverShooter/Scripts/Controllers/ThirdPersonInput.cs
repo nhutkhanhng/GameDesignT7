@@ -308,9 +308,15 @@ namespace CoverShooter
                 if (_controller.IsZooming && _motor != null && _motor.Gun != null)
                     scale = 1.0f - _motor.Gun.Zoom / camera.StateFOV;
 
-            Debug.LogError(ControlFreak2.CF2Input.GetAxis("Mouse X") + ControlFreak2.CF2Input.GetAxis("Mouse Y"));
-                camera.Horizontal = Mathf.LerpAngle(camera.Horizontal, camera.Horizontal + ControlFreak2.CF2Input.GetAxis("Mouse X") * HorizontalRotateSpeed * Time.timeScale * scale, Time.deltaTime);
-                camera.Vertical = Mathf.LerpAngle(camera.Vertical, camera.Vertical - ControlFreak2.CF2Input.GetAxis("Mouse Y") * VerticalRotateSpeed * Time.timeScale * scale, Time.deltaTime);
+            scale *= 2.5f;
+
+            //Debug.Log(ControlFreak2.CF2Input.GetAxis("Mouse X") + ControlFreak2.CF2Input.GetAxis("Mouse Y"));
+            //camera.Horizontal += ControlFreak2.CF2Input.GetAxis("Mouse X") * scale * 4f;
+            camera.Horizontal  = Mathf.LerpAngle(camera.Horizontal, camera.Horizontal + ControlFreak2.CF2Input.GetAxis("Mouse X") * HorizontalRotateSpeed * scale, 1f);
+
+            // camera.Vertical -= ControlFreak2.CF2Input.GetAxis("Mouse Y") * scale * 4f;
+
+            camera.Vertical = Mathf.LerpAngle(camera.Vertical, camera.Vertical - ControlFreak2.CF2Input.GetAxis("Mouse Y") * VerticalRotateSpeed * scale, 1f);
                 camera.UpdatePosition();
             //}
         }

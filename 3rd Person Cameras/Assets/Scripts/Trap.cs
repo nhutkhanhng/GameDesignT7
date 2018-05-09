@@ -12,7 +12,6 @@ public class Trap : MonoBehaviour {
 
 	public virtual void PLay()
     {
-        Debug.LogError("Play");
         EventTrap.Invoke();
     }
 
