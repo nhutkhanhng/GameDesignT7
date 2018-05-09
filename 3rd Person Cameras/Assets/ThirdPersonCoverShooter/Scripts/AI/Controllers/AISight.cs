@@ -147,7 +147,7 @@ namespace CoverShooter
                     if (AIUtil.IsInSight(_actor, actor.TopPosition, actor.GetViewDistance(Distance, _isAlerted), FieldOfView))
                     {
                         if (isDebug)
-                            //Debug.LogError(_actor.name);
+                            Debug.LogError(_actor.name);
 
                         _visible.Add(actor);
                         Message("OnSeeActor", actor);

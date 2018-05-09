@@ -776,7 +776,7 @@ namespace CoverShooter
             if (_state == FighterState.circle)
             {
                 if (JustStandAndFight)
-                    setState(FighterState.standAndFight);
+                    Message("ToStopMoving");
                 else
                 {
                     if (tryInvestigate())
