@@ -1,0 +1,100 @@
+Converting script [1 / 7]	[\Player.cs]
+	Fragments : 2
+		[ 0] : Line:    9	InputMethod   GetAxis             	("Horizontal")
+		[ 1] : Line:   12	InputMethod   GetAxis             	("Vertical")
+
+Converting script [2 / 7]	[\Scripts\MouseLook.cs]
+	Fragments : 10
+		[ 0] : Line:   31	InputMethod   GetAxis             	("Mouse X")
+		[ 1] : Line:   32	InputMethod   GetAxis             	("Mouse Y")
+		[ 2] : Line:   61	Other mod.	[Cursor.lockState]
+		[ 3] : Line:   62	Other mod.	[Cursor.visible]
+		[ 4] : Line:   75	InputMethod   GetKeyUp            	(KeyCode.Escape)
+		[ 5] : Line:   79	InputMethod   GetMouseButtonUp    	(0)
+		[ 6] : Line:   86	Other mod.	[Cursor.lockState]
+		[ 7] : Line:   87	Other mod.	[Cursor.visible]
+		[ 8] : Line:   91	Other mod.	[Cursor.lockState]
+		[ 9] : Line:   92	Other mod.	[Cursor.visible]
+
+Converting script [3 / 7]	[\Scripts\Framework\InteractOnButton.cs]
+	Fragments : 1
+		[ 0] : Line:   25	InputMethod   GetButtonDown       	(buttonName)
+
+Converting script [4 / 7]	[\ThirdPersonCoverShooter\Scripts\Controllers\ThirdPersonInput.cs]
+	Fragments : 38
+		[ 0] : Line:  109	InputMethod   GetAxis             	("Horizontal")
+		[ 1] : Line:  110	InputMethod   GetAxis             	("Vertical")
+		[ 2] : Line:  123	InputMethod   GetButton           	("Run")
+		[ 3] : Line:  130	InputMethod   GetButton           	("Run")
+		[ 4] : Line:  142	InputMethod   GetButtonDown       	("Climb")
+		[ 5] : Line:  143	InputMethod   GetAxis             	("Vertical")
+		[ 6] : Line:  150	InputMethod   GetButtonDown       	("TakeCover")
+		[ 7] : Line:  157	InputMethod   GetButtonDown       	("Jump")
+		[ 8] : Line:  163	InputMethod   GetButton           	("Crouch")
+		[ 9] : Line:  171	InputMethod   GetButtonDown       	("Fire1")
+		[10] : Line:  174	InputMethod   GetButtonDown       	("Fire2")
+		[11] : Line:  178	InputMethod   GetButton           	("Grenade")
+		[12] : Line:  183	InputMethod   GetButton           	("Grenade")
+		[13] : Line:  190	InputMethod   GetButtonDown       	("Fire1")
+		[14] : Line:  191	InputMethod   GetButtonDown       	("Fire2")
+		[15] : Line:  192	InputMethod   GetButtonUp         	("Fire1")
+		[16] : Line:  193	InputMethod   GetButtonUp         	("Fire2")
+		[17] : Line:  203	InputMethod   GetButtonDown       	("RollForward")
+		[18] : Line:  216	InputMethod   GetButtonDown       	("RollLeft")
+		[19] : Line:  224	InputMethod   GetButtonDown       	("RollBackward")
+		[20] : Line:  232	InputMethod   GetButtonDown       	("RollRight")
+		[21] : Line:  243	InputMethod   GetKey              	(KeyCode.Alpha1)
+		[22] : Line:  244	InputMethod   GetKey              	(KeyCode.Alpha2)
+		[23] : Line:  245	InputMethod   GetKey              	(KeyCode.Alpha3)
+		[24] : Line:  246	InputMethod   GetKey              	(KeyCode.Alpha4)
+		[25] : Line:  247	InputMethod   GetKey              	(KeyCode.Alpha5)
+		[26] : Line:  248	InputMethod   GetKey              	(KeyCode.Alpha6)
+		[27] : Line:  249	InputMethod   GetKey              	(KeyCode.Alpha7)
+		[28] : Line:  250	InputMethod   GetKey              	(KeyCode.Alpha8)
+		[29] : Line:  251	InputMethod   GetKey              	(KeyCode.Alpha9)
+		[30] : Line:  252	InputMethod   GetKey              	(KeyCode.Alpha0)
+		[31] : Line:  254	InputProperty mouseScrollDelta    
+		[32] : Line:  261	InputProperty mouseScrollDelta    
+		[33] : Line:  273	InputMethod   GetButton           	("Reload")
+		[34] : Line:  311	InputMethod   GetAxis             	("Mouse X")
+		[35] : Line:  311	InputMethod   GetAxis             	("Mouse Y")
+		[36] : Line:  312	InputMethod   GetAxis             	("Mouse X")
+		[37] : Line:  313	InputMethod   GetAxis             	("Mouse Y")
+
+Converting script [5 / 7]	[\ThirdPersonCoverShooter\Scripts\UI\TouchBase.cs]
+	Fragments : 9
+		[ 0] : Line:  104	InputProperty mousePosition       
+		[ 1] : Line:  104	InputProperty mousePosition       
+		[ 2] : Line:  105	InputProperty mousePosition       
+		[ 3] : Line:  108	InputMethod   GetMouseButton      	(0)
+		[ 4] : Line:  114	InputProperty touchCount          
+		[ 5] : Line:  116	InputMethod   GetTouch            	(i)
+		[ 6] : Line:  125	InputMethod   GetMouseButton      	(0)
+		[ 7] : Line:  127	InputProperty mousePosition       
+		[ 8] : Line:  127	InputProperty mousePosition       
+
+Converting script [6 / 7]	[\ThirdPersonCoverShooter\Scripts\Util\ExitToEscape.cs]
+	Fragments : 1
+		[ 0] : Line:   12	InputMethod   GetKeyDown          	(KeyCode.Escape)
+
+Converting script [7 / 7]	[\ThirdPersonCoverShooter\Scripts\Util\MouseLock.cs]
+	Fragments : 6
+		[ 0] : Line:   15	InputMethod   GetKeyDown          	(KeyCode.Escape)
+		[ 1] : Line:   18	InputMethod   GetMouseButtonDown  	(0)
+		[ 2] : Line:   23	Other mod.	[Cursor.lockState]
+		[ 3] : Line:   24	Other mod.	[Cursor.visible]
+		[ 4] : Line:   28	Other mod.	[Cursor.lockState]
+		[ 5] : Line:   29	Other mod.	[Cursor.visible]
+
+
+7 scripts modified!
+Overwriting actual scripts...
+	[0 / 7] from  [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/CF2-Data/Script-Backups/2018-05-09-18-03\Assets-After/\Player.cs] to [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/Assets/\Player.cs]
+	[1 / 7] from  [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/CF2-Data/Script-Backups/2018-05-09-18-03\Assets-After/\Scripts\MouseLook.cs] to [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/Assets/\Scripts\MouseLook.cs]
+	[2 / 7] from  [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/CF2-Data/Script-Backups/2018-05-09-18-03\Assets-After/\Scripts\Framework\InteractOnButton.cs] to [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/Assets/\Scripts\Framework\InteractOnButton.cs]
+	[3 / 7] from  [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/CF2-Data/Script-Backups/2018-05-09-18-03\Assets-After/\ThirdPersonCoverShooter\Scripts\Controllers\ThirdPersonInput.cs] to [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/Assets/\ThirdPersonCoverShooter\Scripts\Controllers\ThirdPersonInput.cs]
+	[4 / 7] from  [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/CF2-Data/Script-Backups/2018-05-09-18-03\Assets-After/\ThirdPersonCoverShooter\Scripts\UI\TouchBase.cs] to [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/Assets/\ThirdPersonCoverShooter\Scripts\UI\TouchBase.cs]
+	[5 / 7] from  [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/CF2-Data/Script-Backups/2018-05-09-18-03\Assets-After/\ThirdPersonCoverShooter\Scripts\Util\ExitToEscape.cs] to [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/Assets/\ThirdPersonCoverShooter\Scripts\Util\ExitToEscape.cs]
+	[6 / 7] from  [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/CF2-Data/Script-Backups/2018-05-09-18-03\Assets-After/\ThirdPersonCoverShooter\Scripts\Util\MouseLock.cs] to [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/Assets/\ThirdPersonCoverShooter\Scripts\Util\MouseLock.cs]
+
+Overwriting COMPLETED!

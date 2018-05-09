@@ -133,6 +133,7 @@ namespace UnityStandardAssets.CrossPlatformInput
 				m_PreviousMouse = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f);
 #endif
 				UpdateVirtualAxes(new Vector3(pointerDelta.x, pointerDelta.y, 0));
+
 			}
 		}
 
