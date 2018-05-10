@@ -68,10 +68,11 @@ public class MissionCondition : MonoBehaviour {
     {
         if (currentMission != null)
         {
+            Debug.LogError(currentMission);
+
             if (currentMission.IsComplete())
             {
-                Debug.LogError("SẠDKJSADKLD");
-
+                Debug.LogError("Invoke");
                 currentMission.Invoke();
             }
         }

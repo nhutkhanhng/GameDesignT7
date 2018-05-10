@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class TrapLever : Trap {
 
+    public string Tag = "Player";
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        Debug.LogError(other.gameObject.tag);
+
+        if (CanStart)
         {
-            this.PLay();
+            if (other.gameObject.CompareTag(Tag))
+            {
+
+                this.PLay();
+            }
         }
     }
 }

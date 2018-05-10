@@ -15,7 +15,6 @@ public class ClickableObject : MonoBehaviour
     {
         if(Mathf.Abs(Vector3.Distance(this.transform.position, Camera.main.transform.position)) < Distance)
         {
-            Debug.LogError("SAJDKLASJDL");
             Event.Invoke();
         }
 
