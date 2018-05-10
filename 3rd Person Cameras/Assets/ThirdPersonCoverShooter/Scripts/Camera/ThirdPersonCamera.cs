@@ -16,6 +16,14 @@ namespace CoverShooter
             get { return _stateFOV; }
         }
 
+        public float shakeDuration = 0f;
+
+        // Amplitude of the shake. A larger value shakes the camera harder.
+        public float shakeAmount = 0.7f;
+        public float TimeShake = 3f;
+
+        public float decreaseFactor = 1.0f;
+
         /// <summary>
         /// Target character motor.
         /// </summary>
@@ -412,6 +420,34 @@ namespace CoverShooter
             }
 
             return maxFix * forward;
+        }
+
+        public bool smooth = true;
+        public float smoothAmount = 5f;//Amount to smooth
+
+        public void StartShake(float time )
+        {
+            shakeDuration = time;
+        }
+        public void LateUpdate()
+        {
+            if (shakeDuration > 0)
+            {
+                this.transform.localPosition += Random.insideUnitSphere * shakeAmount;
+                Vector3 rotationAmount = Random.insideUnitSphere * shakeAmount;//A Vector3 to add to the Local Rotation
+                rotationAmount.z = 0;//Don't change the Z; it looks funny.
+
+                //if (smooth)
+                //    transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(rotationAmount), Time.deltaTime * smoothAmount);
+                //else
+                //    transform.localRotation = Quaternion.Euler(rotationAmount);//Set the local rotation the be the rotation amount.
+
+                shakeDuration -= Time.deltaTime * decreaseFactor;
+            }
+            else
+            {
+                shakeDuration = 0f;
+            }
         }
     }
 }

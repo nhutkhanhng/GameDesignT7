@@ -36,6 +36,16 @@ public class CameraShaker : MonoBehaviour
 
 
 
+    public void StartShake(float amount, float time)
+    {
+        if (s_Instance == null)
+            return;
+
+        s_Instance.m_ShakeIntensity = amount;
+        s_Instance.m_SinceShakeTime = time;
+    }
+
+    [ContextMenu("Play")]
     static public void Shake(float amount, float time)
     {
         if (s_Instance == null)

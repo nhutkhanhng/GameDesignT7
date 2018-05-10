@@ -301,14 +301,16 @@ namespace CoverShooter
             var camera = Camera;
             if (camera == null) return;
 
-            //if (Cursor.lockState == CursorLockMode.Locked || RotateWhenUnlocked)
-            //{
-                var scale = 1.0f;
+            var scale = 1.0f;
+            if (Cursor.lockState == CursorLockMode.Locked || RotateWhenUnlocked)
+            {
+
 
                 if (_controller.IsZooming && _motor != null && _motor.Gun != null)
                     scale = 1.0f - _motor.Gun.Zoom / camera.StateFOV;
+            }
 
-            scale *= 2.5f;
+            scale *= 2f;
 
             //Debug.Log(ControlFreak2.CF2Input.GetAxis("Mouse X") + ControlFreak2.CF2Input.GetAxis("Mouse Y"));
             //camera.Horizontal += ControlFreak2.CF2Input.GetAxis("Mouse X") * scale * 4f;
