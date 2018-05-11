@@ -1,0 +1,10 @@
+Converting script [1 / 1]	[\ThirdPersonCoverShooter\Scripts\Controllers\ThirdPersonInput.cs]
+	Fragments : 1
+		[ 0] : Line:  305	Other mod.	[Cursor.lockState]
+
+
+1 scripts modified!
+Overwriting actual scripts...
+	[0 / 1] from  [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/CF2-Data/Script-Backups/2018-05-11-15-54\Assets-After/\ThirdPersonCoverShooter\Scripts\Controllers\ThirdPersonInput.cs] to [C:/Users/nhutk/Downloads/3rd Person Cameras/GameDesignT7/3rd Person Cameras/Assets/\ThirdPersonCoverShooter\Scripts\Controllers\ThirdPersonInput.cs]
+
+Overwriting COMPLETED!
