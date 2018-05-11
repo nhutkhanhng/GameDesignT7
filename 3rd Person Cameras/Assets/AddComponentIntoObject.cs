@@ -16,19 +16,50 @@ public class AddComponentIntoObject : MonoBehaviour {
     [ContextMenu("AddBoxCollider")]
 	void AddCollider ()
     {
-        var colliders = GetComponents<BoxCollider>();
-        foreach( var col in colliders)
-        {
-            DestroyImmediate(col);
-        }
-
         for ( int i = 0; i < Amount; i++)
         {
             var collider = this.gameObject.AddComponent<BoxCollider>();
-            collider.center = new Vector3(Osset9Edge * ((i / 3 == 0) ? -1:  (i / 3)), Osset9Edge, Osset9Edge * ((i % 3 == 0) ? -1 : (i % 3)));
+
+            float row;
+
+            if (i / 3 == 0)
+            {
+                row = -1f;
+            }
+            else if (i / 3 == 1)
+            {
+                row = 0f;
+            }
+            else
+                row = 1f;
+
+            float column;
+
+            if (i % 3 == 0)
+            {
+                column = -1f;
+            }
+            else if (i % 3 == 1)
+            {
+                column = 0f;
+            }
+            else
+                column = 1f;
+
+            collider.center = new Vector3(Osset9Edge * row, Osset9Edge, Osset9Edge * column);
             collider.size = Size;
             collider.isTrigger = true;
         }
 	    	
 	}
+
+    [ContextMenu("Clear")]
+    void ClearCollider()
+    {
+        var colliders = GetComponents<BoxCollider>();
+        foreach (var col in colliders)
+        {
+            DestroyImmediate(col);
+        }
+    }
 }

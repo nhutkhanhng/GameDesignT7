@@ -6,10 +6,6 @@ public class TrapLever : Trap {
 
     public string Tag = "Player";
 
-    private void Start()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
         Debug.LogError(other.gameObject.tag);
@@ -18,7 +14,6 @@ public class TrapLever : Trap {
         {
             if (other.gameObject.CompareTag(Tag))
             {
-
                 this.PLay();
             }
         }
