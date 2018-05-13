@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3357968}
   - component: {fileID: 2394348}
   - component: {fileID: 9544576}
+  - component: {fileID: 65586674571396630}
   m_Layer: 0
   m_Name: SD_Env_Pillar_Wood_01
   m_TagString: Untagged
@@ -24,8 +25,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169958}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.40821788, y: 0.23456968, z: -0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: -25.069216, y: -23.734322, z: -22.526278}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,3 +101,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 169958}
   m_IsPrefabParent: 1
+--- !u!65 &65586674571396630
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169958}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9118844, y: 4.999989, z: 0.9118845}
+  m_Center: {x: 0.000001832843, y: 2.499993, z: 0.0000039637084}

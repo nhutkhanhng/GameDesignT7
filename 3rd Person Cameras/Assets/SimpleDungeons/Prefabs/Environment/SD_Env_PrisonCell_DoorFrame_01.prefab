@@ -10,6 +10,8 @@ GameObject:
   - component: {fileID: 424888}
   - component: {fileID: 3393358}
   - component: {fileID: 2357906}
+  - component: {fileID: 64692358242964720}
+  - component: {fileID: 114313314049495166}
   m_Layer: 0
   m_Name: SD_Env_PrisonCell_DoorFrame_01
   m_TagString: Untagged
@@ -27,6 +29,8 @@ GameObject:
   - component: {fileID: 480600}
   - component: {fileID: 3338382}
   - component: {fileID: 2343042}
+  - component: {fileID: 114325924239887908}
+  - component: {fileID: 65700073435629444}
   m_Layer: 0
   m_Name: SD_Env_PrisonCell_Door_01
   m_TagString: Untagged
@@ -40,8 +44,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181320}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.109380685, y: 0.87542665, z: -0.40821815, w: -0.23456764}
+  m_LocalPosition: {x: -54.499786, y: -28.311626, z: -26.367096}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 480600}
@@ -54,8 +58,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195124}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5726585, y: 1.8251259, z: 0.038212344}
+  m_LocalRotation: {x: 0, y: -0.7483336, z: 0, w: 0.66332257}
+  m_LocalPosition: {x: 1.5726587, y: 1.8251257, z: 0.03821214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424888}
@@ -154,3 +158,73 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 181320}
   m_IsPrefabParent: 1
+--- !u!64 &64692358242964720
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 77d720b7a195c354ea94abf340802be9, type: 3}
+--- !u!65 &65700073435629444
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.0937214, y: 3.0741262, z: 0.3048756}
+  m_Center: {x: -1.5468607, y: -0.0000033406263, z: 0.000003849272}
+--- !u!114 &114313314049495166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c20cebed657b63848901d5defad4df07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Distance: 5
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114325924239887908}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114325924239887908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc321a104a5e4504db2c4e4054fa0181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorOpenAngle: -103.404
+  doorCloseAngle: 0
+  doorAnimSpeed: 2
+  doorStatus: 0
+  Target: {fileID: 0}

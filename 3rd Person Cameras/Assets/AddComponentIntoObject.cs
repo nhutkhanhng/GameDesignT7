@@ -8,6 +8,8 @@ public class AddComponentIntoObject : MonoBehaviour {
 
     public int Amount = 9;
 
+    public int Edge;
+
     public Vector3 Size;
 
     public float Osset9Edge = 1.7f;
@@ -22,11 +24,11 @@ public class AddComponentIntoObject : MonoBehaviour {
 
             float row;
 
-            if (i / 3 == 0)
+            if (i / Edge == 0)
             {
                 row = -1f;
             }
-            else if (i / 3 == 1)
+            else if (i / Edge == 1)
             {
                 row = 0f;
             }
@@ -35,11 +37,11 @@ public class AddComponentIntoObject : MonoBehaviour {
 
             float column;
 
-            if (i % 3 == 0)
+            if (i % Edge == 0)
             {
                 column = -1f;
             }
-            else if (i % 3 == 1)
+            else if (i % Edge == 1)
             {
                 column = 0f;
             }

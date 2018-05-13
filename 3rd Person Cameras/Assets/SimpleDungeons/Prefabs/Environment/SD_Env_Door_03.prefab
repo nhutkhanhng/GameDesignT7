@@ -10,6 +10,8 @@ GameObject:
   - component: {fileID: 472910}
   - component: {fileID: 3345468}
   - component: {fileID: 2368524}
+  - component: {fileID: 64273438151587834}
+  - component: {fileID: 114047744817102330}
   m_Layer: 0
   m_Name: SD_Env_Door_03
   m_TagString: Untagged
@@ -27,6 +29,9 @@ GameObject:
   - component: {fileID: 460866}
   - component: {fileID: 3350520}
   - component: {fileID: 2370320}
+  - component: {fileID: 65977108334328580}
+  - component: {fileID: 114743666230511928}
+  - component: {fileID: 114931200927608590}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -53,8 +58,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175432}
-  m_LocalRotation: {x: 0, y: -0.70710665, z: 0, w: 0.70710695}
-  m_LocalPosition: {x: 1.8368869, y: 5.0006866, z: -149.91232}
+  m_LocalRotation: {x: -0.21130955, y: 0.78488505, z: -0.3659979, w: 0.45315483}
+  m_LocalPosition: {x: -49.323257, y: -32.91861, z: -30.232811}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 460866}
@@ -154,3 +159,101 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 175432}
   m_IsPrefabParent: 1
+--- !u!64 &64273438151587834
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: bb26fdcbf6991af4ab62725f12802513, type: 3}
+--- !u!65 &65977108334328580
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7595367, y: 3.2047508, z: 0.1557304}
+  m_Center: {x: -0.879776, y: 1.602374, z: -0.024092484}
+--- !u!114 &114047744817102330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c20cebed657b63848901d5defad4df07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Distance: 5
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114743666230511928}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114743666230511928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc321a104a5e4504db2c4e4054fa0181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorOpenAngle: 90
+  doorCloseAngle: 0
+  doorAnimSpeed: 2
+  doorStatus: 0
+  Target: {fileID: 0}
+--- !u!114 &114931200927608590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c20cebed657b63848901d5defad4df07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Distance: 5
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114743666230511928}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

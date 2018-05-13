@@ -53,6 +53,11 @@ public class MissionCondition : MonoBehaviour {
 
     }
 
+    public bool CheckMission(int mission)
+    {
+        return indexMission == mission;
+    }
+
     public void UpdateMission(int delta)
     {
         indexMission += delta;
@@ -64,6 +69,7 @@ public class MissionCondition : MonoBehaviour {
             currentMission = Mission[indexMission];
         }
     }
+
     public void CheckedOut()
     {
         if (currentMission != null)

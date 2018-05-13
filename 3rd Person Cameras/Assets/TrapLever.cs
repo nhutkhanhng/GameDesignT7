@@ -8,8 +8,6 @@ public class TrapLever : Trap {
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.LogError(other.gameObject.tag);
-
         if (CanStart)
         {
             if (other.gameObject.CompareTag(Tag))

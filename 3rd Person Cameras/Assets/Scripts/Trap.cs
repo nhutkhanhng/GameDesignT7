@@ -17,6 +17,7 @@ public class Trap : MonoBehaviour {
 
     public virtual void Stop()
     {
+        CanStart = false;
     }
 
     public virtual void TriggerEnter()
